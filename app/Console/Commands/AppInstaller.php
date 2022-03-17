@@ -61,6 +61,7 @@ class AppInstaller extends Command
         }
 
         $this->alert('Application is installed successfully.');
+        return 1;
     }
 
 
