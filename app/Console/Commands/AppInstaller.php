@@ -148,7 +148,6 @@ class AppInstaller extends Command
             Artisan::call('migrate:fresh', ['--force' => true]);
             Artisan::call('db:seed', ['--force' => true]);
         } catch (\Exception $e) {
-            echo "Error: " . $e->getMessage();
             return false;
         }
         return true;
